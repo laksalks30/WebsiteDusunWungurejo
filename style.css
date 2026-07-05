@@ -1740,10 +1740,15 @@ textarea {
 }
 
 .guestbook-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 40px;
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
     align-items: start;
+}
+
+.guestbook-form-card {
+    width: 100%;
 }
 
 .guestbook-form-card,
@@ -3587,6 +3592,53 @@ body.lang-switching [data-lang-ph] {
 }
 
 [data-theme="dark"] .theme-toggle:hover {
+    background: linear-gradient(135deg, #FF6B9D, #FF3385);
+    color: #FFFFFF;
+    border-color: transparent;
+    box-shadow: 0 6px 20px rgba(255, 107, 157, 0.4);
+}
+
+/* === LANG TOGGLE BUTTON === */
+.lang-toggle-btn {
+    background: linear-gradient(135deg, #FFF0F5, #FFD6E6);
+    color: #FF3385;
+    border: 1.5px solid rgba(255, 51, 133, 0.2);
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 4px;
+    box-shadow: 0 2px 8px rgba(255, 51, 133, 0.15);
+    padding: 8px 16px;
+    letter-spacing: 0.5px;
+}
+
+.lang-toggle-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 51, 133, 0.25);
+    background: linear-gradient(135deg, #FF3385, #FF6B9D);
+    color: #FFFFFF;
+    border-color: transparent;
+}
+
+.lang-toggle-btn .lang-sep {
+    opacity: 0.5;
+    margin: 0 6px;
+    font-weight: 400;
+}
+
+[data-theme="dark"] .lang-toggle-btn {
+    background: linear-gradient(135deg, #1E1E2E, #313244);
+    color: #CDD6F4;
+    border: 1.5px solid rgba(205, 214, 244, 0.12);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .lang-toggle-btn:hover {
     background: linear-gradient(135deg, #FF6B9D, #FF3385);
     color: #FFFFFF;
     border-color: transparent;

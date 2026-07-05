@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
     // --- 0. Preloader ---
     const preloader = document.getElementById('preloader');
@@ -59,9 +59,9 @@
         // Update Button UI with Flags
         if (langToggleBtn) {
             if (lang === 'en') {
-                langToggleBtn.innerHTML = '<span style="opacity: 0.5; font-weight: 400;">ðŸ‡®ðŸ‡© ID | </span> ðŸ‡¬ðŸ‡§ EN';
+                langToggleBtn.innerHTML = '<span class="lang-id" style="opacity: 0.4; font-weight: 400;">ID</span> <span class="lang-sep">|</span> <span class="lang-en" style="opacity: 1; font-weight: 800;">EN</span>';
             } else {
-                langToggleBtn.innerHTML = 'ðŸ‡®ðŸ‡© ID <span style="opacity: 0.5; margin: 0 4px; font-weight: 400;">| ðŸ‡¬ðŸ‡§ EN</span>';
+                langToggleBtn.innerHTML = '<span class="lang-id" style="opacity: 1; font-weight: 800;">ID</span> <span class="lang-sep">|</span> <span class="lang-en" style="opacity: 0.4; font-weight: 400;">EN</span>';
             }
         }
 
