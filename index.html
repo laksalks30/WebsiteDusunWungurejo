@@ -40,7 +40,7 @@
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css?v=37">
+    <link rel="stylesheet" href="style.css?v=38">
     <!-- Chart.js for Demographics -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- jsPDF for PDF Generator -->
@@ -565,37 +565,42 @@
                     selama pelaksanaan KKN Kelompok AA 84.095.</p>
             </div>
 
-            <!-- Scrollytelling Overlay over Gallery -->
-            <div class="scrolly-sticky gallery-scrolly">
-                <div class="scrolly-content">
-                    <div class="scrolly-text" id="scroll-text-1">
-                        <span class="scrolly-highlight">31 Hari</span> Pengabdian...
+            <!-- Wrapper to overlap the gallery and the scrolly overlay -->
+            <div class="gallery-overlap-wrapper" style="display: grid;">
+
+                <!-- Scrollytelling Overlay over Gallery -->
+                <div class="scrolly-sticky gallery-scrolly" style="grid-area: 1 / 1;">
+                    <div class="scrolly-content">
+                        <div class="scrolly-text" id="scroll-text-1">
+                            <span class="scrolly-highlight">31 Hari</span> Pengabdian...
+                        </div>
+                        <div class="scrolly-text" id="scroll-text-2">
+                            <span class="scrolly-highlight">13</span> Program Kerja Terlaksana
+                        </div>
+                        <div class="scrolly-text" id="scroll-text-3">
+                            <span class="scrolly-highlight">430+</span> Warga Dusun Terjangkau
+                        </div>
+                        <div class="scrolly-text" id="scroll-text-4">
+                            Meninggalkan <span class="scrolly-highlight">Jejak Digital Abadi</span> di Wungurejo.
+                        </div>
                     </div>
-                    <div class="scrolly-text" id="scroll-text-2">
-                        <span class="scrolly-highlight">13</span> Program Kerja Terlaksana
-                    </div>
-                    <div class="scrolly-text" id="scroll-text-3">
-                        <span class="scrolly-highlight">430+</span> Warga Dusun Terjangkau
-                    </div>
-                    <div class="scrolly-text" id="scroll-text-4">
-                        Meninggalkan <span class="scrolly-highlight">Jejak Digital Abadi</span> di Wungurejo.
+
+                    <div class="scrolly-dots" id="scrolly-dots">
+                        <div class="scrolly-dot active" data-index="0"></div>
+                        <div class="scrolly-dot" data-index="1"></div>
+                        <div class="scrolly-dot" data-index="2"></div>
+                        <div class="scrolly-dot" data-index="3"></div>
                     </div>
                 </div>
 
-                <div class="scrolly-dots" id="scrolly-dots">
-                    <div class="scrolly-dot active" data-index="0"></div>
-                    <div class="scrolly-dot" data-index="1"></div>
-                    <div class="scrolly-dot" data-index="2"></div>
-                    <div class="scrolly-dot" data-index="3"></div>
+                <div class="masonry-gallery" id="masonry-gallery-container" style="grid-area: 1 / 1;">
+                    <div class="loading-spinner-wrapper"
+                        style="display: flex; justify-content: center; align-items: center; padding: 40px; width: 100%; grid-column: 1 / -1;">
+                        <div class="loader-spinner"></div>
+                    </div>
+                    <!-- Gallery items will be injected here by app.js -->
                 </div>
-            </div>
 
-            <div class="masonry-gallery" id="masonry-gallery-container">
-                <div class="loading-spinner-wrapper"
-                    style="display: flex; justify-content: center; align-items: center; padding: 40px; width: 100%; grid-column: 1 / -1;">
-                    <div class="loader-spinner"></div>
-                </div>
-                <!-- Gallery items will be injected here by app.js -->
             </div>
         </div>
     </section>
@@ -910,7 +915,7 @@
     <!-- Multi-Language Dictionary -->
     <script src="lang.js?v=5"></script>
     <!-- App Script -->
-    <script src="app.js?v=37"></script>
+    <script src="app.js?v=38"></script>
     <!-- PWA Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {
