@@ -1,4 +1,4 @@
-/* Style variables representing the custom color palette */
+﻿/* Style variables representing the custom color palette */
 :root {
     --color-primary: #FF3385;
     /* Vibrant Pink matching logo */
@@ -2198,7 +2198,7 @@ textarea:focus {
 }
 
 
-/* Instagram Button â€” original pink gradient */
+/* Instagram Button Ã¢â‚¬â€ original pink gradient */
 .btn-social-instagram {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: var(--color-white) !important;
@@ -2221,7 +2221,7 @@ textarea:focus {
     filter: brightness(1.08);
 }
 
-/* TikTok Button â€” original dark style */
+/* TikTok Button Ã¢â‚¬â€ original dark style */
 .btn-social-tiktok {
     background: #111111;
     color: var(--color-white) !important;
@@ -2263,7 +2263,7 @@ textarea:focus {
     color: var(--color-white);
 }
 
-/* Dark mode CTA â€” full redesign to premium dark glassmorphic */
+/* Dark mode CTA Ã¢â‚¬â€ full redesign to premium dark glassmorphic */
 [data-theme="dark"] .cta-section {
     background-color: #11111B !important;
 }
@@ -2933,7 +2933,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 /* ================================================================
-   DARK MODE â€” PROFESSIONAL COMPLETE REDESIGN
+   DARK MODE Ã¢â‚¬â€ PROFESSIONAL COMPLETE REDESIGN
    Strategy: Override ALL color variables + explicit selectors
    ================================================================ */
 
@@ -2988,7 +2988,7 @@ body.lang-switching [data-lang-ph] {
     box-shadow: 0 0 8px rgba(255, 107, 157, 0.6);
 }
 
-/* Nav-btn (Buku Tamu pill button) in dark mode â€” glassmorphism */
+/* Nav-btn (Buku Tamu pill button) in dark mode Ã¢â‚¬â€ glassmorphism */
 [data-theme="dark"] .nav-btn {
     background: rgba(255, 107, 157, 0.12) !important;
     color: #FF9DBF !important;
@@ -3399,7 +3399,7 @@ body.lang-switching [data-lang-ph] {
     color: #6C7086 !important;
 }
 
-/* === 18. DETAILS MODAL â€” DARK MODE === */
+/* === 18. DETAILS MODAL Ã¢â‚¬â€ DARK MODE === */
 
 /* Backdrop */
 [data-theme="dark"] .custom-modal-backdrop {
@@ -3553,7 +3553,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 /* ================================================================
-   THEME TOGGLE BUTTON â€” Premium Pill Style
+   THEME TOGGLE BUTTON Ã¢â‚¬â€ Premium Pill Style
    ================================================================ */
 .theme-toggle {
     position: relative;
@@ -3733,7 +3733,7 @@ body.lang-switching [data-lang-ph] {
 /* === END OF STYLESHEET === */
 
 /* ===================================================
-   DARK MODE ADDITIONS â€” Pillar Cards, Badges, Sections
+   DARK MODE ADDITIONS Ã¢â‚¬â€ Pillar Cards, Badges, Sections
    =================================================== */
 
 /* Pillar Cards (Fokus Utama Pengabdian) */
@@ -3881,7 +3881,7 @@ body.lang-switching [data-lang-ph] {
     color: #A6ADC8 !important;
 }
 
-/* Buttons â€” Dark Mode */
+/* Buttons Ã¢â‚¬â€ Dark Mode */
 [data-theme="dark"] .btn-primary {
     background: linear-gradient(135deg, #FF6B9D 0%, #cc2266 100%) !important;
     color: #fff !important;
@@ -4107,7 +4107,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 /* ===================================================
-   BLOG READER MODAL â€” Premium Design
+   BLOG READER MODAL Ã¢â‚¬â€ Premium Design
    =================================================== */
 .blog-reader-overlay {
     position: fixed;
@@ -4571,7 +4571,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 /* ======================================================
-   PDF GENERATOR â€” Floating Button & Modal
+   PDF GENERATOR Ã¢â‚¬â€ Floating Button & Modal
    ====================================================== */
 
 /* FAB Trigger Button */
@@ -4797,7 +4797,7 @@ body.lang-switching [data-lang-ph] {
 }
 .pdf-btn-generate:hover { box-shadow: 0 8px 24px rgba(108, 8, 32, 0.45); transform: translateY(-2px); }
 
-/* Dark Mode â€” PDF Modal */
+/* Dark Mode Ã¢â‚¬â€ PDF Modal */
 [data-theme="dark"] .pdf-modal { background: #1E1E2E; }
 [data-theme="dark"] .pdf-form-group label { color: #CDD6F4; }
 [data-theme="dark"] .pdf-form-group input,
@@ -4992,7 +4992,7 @@ body.lang-switching [data-lang-ph] {
 }
 .pdf-btn-generate:hover { box-shadow: 0 8px 24px rgba(108, 8, 32, 0.45); transform: translateY(-2px); }
 
-/* Dark Mode â€” PDF Modal */
+/* Dark Mode Ã¢â‚¬â€ PDF Modal */
 [data-theme="dark"] .pdf-modal { background: #1E1E2E; }
 [data-theme="dark"] .pdf-form-group label { color: #CDD6F4; }
 [data-theme="dark"] .pdf-form-group input,
@@ -5016,7 +5016,7 @@ body.lang-switching [data-lang-ph] {
 .header-controls { display: flex; align-items: center; gap: 8px; margin-left: auto; }
 
 /* ======================================================
-   MOBILE NAVBAR FIX — compact single-row header on HP
+   MOBILE NAVBAR FIX â€” compact single-row header on HP
    ====================================================== */
 @media (max-width: 768px) {
     /* Shrink overall navbar height */
@@ -5071,21 +5071,20 @@ body.lang-switching [data-lang-ph] {
     }
 
     /* Hide subtitle on mobile to keep navbar single row */
-    .logo-subtitle {
-        display: none;
-    }
+    .logo-subtitle { display: none !important; }
 
     /* Fix content being hidden behind fixed navbar on mobile */
-    /* Navbar height on mobile ≈ 54px (10px*2 padding + 34px logo) */
+    /* Navbar height on mobile â‰ˆ 54px (10px*2 padding + 34px logo) */
     .page-section {
-        padding-top: 80px !important;
+        padding-top: 100px !important;
     }
 
     #beranda.page-section {
-        padding-top: 80px !important;
+        padding-top: 100px !important;
     }
 
     .hero-section {
-        padding-top: 80px;
+        padding-top: 100px !important;
     }
 }
+
